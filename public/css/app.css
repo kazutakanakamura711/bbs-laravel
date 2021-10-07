@@ -1,0 +1,227 @@
+@charset "UTF-8";
+body {
+  min-width: 320px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 4px;
+  background-image: url(/images/alleyRed1.png?07e7be4cc0cbc16e3abcb898f8e90c6b);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body h1 {
+  color: #e74c3c;
+  animation: tx-color 4s infinite;
+  -webkit-animation: tx-color 4s infinite;
+}
+@-webkit-keyframes tx-color {
+  0% {
+    color: #e74c3c;
+  }
+  20% {
+    color: #f1c40f;
+  }
+  40% {
+    color: #1abc9c;
+  }
+  60% {
+    color: #3498db;
+  }
+  80% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #e74c3c;
+  }
+}
+@keyframes tx-color {
+  0% {
+    color: #e74c3c;
+  }
+  20% {
+    color: #f1c40f;
+  }
+  40% {
+    color: #1abc9c;
+  }
+  60% {
+    color: #3498db;
+  }
+  80% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #e74c3c;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#top {
+  color: #faf5f5;
+  padding: 0.5% 1%;
+  position: fixed;
+  top: 2%;
+  left: 1%;
+}
+#top a {
+  text-decoration: none;
+  font-size: small;
+  border: solid 1px;
+  padding: 8px;
+  cursor: pointer;
+  color: #161616;
+  transition: 0.3s;
+}
+#top a:hover {
+  opacity: 0.5;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 29%;
+}
+#title .move {
+  background-color: #0df046;
+  width: 100%;
+  height: 1rem;
+  -webkit-animation: 3s linear infinite rotation2;
+  animation: 3s linear infinite rotation2;
+}
+#title .move .top {
+  background-color: #06f0a2;
+  width: 100%;
+  height: 50%;
+}
+
+@-webkit-keyframes rotation2 {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes rotation2 {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+h1 {
+  text-align: center;
+}
+
+#name {
+  border: none;
+  border-bottom: solid 1px;
+  outline: none;
+  margin: 0 0 5% 0;
+}
+
+#message {
+  outline: none;
+}
+
+label {
+  color: #faf5f5;
+}
+
+.label {
+  margin: 5%;
+}
+
+.viewNameArea,
+.messageArea {
+  text-align: center;
+}
+
+.error {
+  color: #da1414;
+}
+
+.send {
+  text-align: center;
+}
+.send button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 1em 0 4em 0;
+  /* 前後の隙間 */
+  padding: 1em 1.6em;
+  /* 塗りの余白 */
+  font-size: 0.8em;
+  /* フォントサイズ */
+  background-color: #000000;
+  /* 背景色 */
+  color: #faf5f5;
+  /* テキストカラー */
+  cursor: pointer;
+  /* カーソルを指マークに */
+  /* 角の丸み */
+  border: 0;
+  /* 枠線を消す */
+  transition: 0.3s;
+  /* ホバーの変化を滑らかに */
+}
+.send button:hover {
+  transform: rotate(360deg);
+}
+
+.delete {
+  text-align: right;
+}
+.delete button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 1em;
+  /* 前後の隙間 */
+  padding: 1em 1.6em;
+  /* 塗りの余白 */
+  font-size: 0.6em;
+  /* フォントサイズ */
+  background-color: #e20f0f;
+  /* 背景色 */
+  color: #faf5f5;
+  /* テキストカラー */
+  cursor: pointer;
+  /* カーソルを指マークに */
+  /* 角の丸み */
+  border: 0;
+  /* 枠線を消す */
+  transition: 0.3s;
+  /* ホバーの変化を滑らかに */
+}
+.delete button:hover {
+  opacity: 0.5;
+}
+
+.block {
+  background-color: #faf5f5;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgba(41, 41, 41, 0.726);
+  margin: 4% 20%;
+  transition: 0.3s;
+}
+.block:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 1em;
+  }
+}

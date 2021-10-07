@@ -1,0 +1,59 @@
+@mixin gradation {
+    h1 {
+        color: #e74c3c;
+        animation: tx-color 4s infinite;
+        -webkit-animation: tx-color 4s infinite;
+    }
+
+    @-webkit-keyframes tx-color {
+        0% {
+            color: #e74c3c;
+        }
+
+        20% {
+            color: #f1c40f;
+        }
+
+        40% {
+            color: #1abc9c;
+        }
+
+        60% {
+            color: #3498db;
+        }
+
+        80% {
+            color: #9b59b6;
+        }
+
+        100% {
+            color: #e74c3c;
+        }
+    }
+
+    @keyframes tx-color {
+        0% {
+            color: #e74c3c;
+        }
+
+        20% {
+            color: #f1c40f;
+        }
+
+        40% {
+            color: #1abc9c;
+        }
+
+        60% {
+            color: #3498db;
+        }
+
+        80% {
+            color: #9b59b6;
+        }
+
+        100% {
+            color: #e74c3c;
+        }
+    }
+}
